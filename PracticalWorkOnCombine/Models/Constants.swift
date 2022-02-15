@@ -18,4 +18,5 @@ class Constants {
     let timeIntervalsForPublisherOfStrings: [TimeInterval] = [0.1, 0.3, 0.2, 0.2, 0.1, 0.3, 0.1]
     let timeIntervalsForPublisherOfCharacters: [TimeInterval] = [0.1, 0.5, 1.3, 0.7, 1.5, 0.4, 0.1]
     let emojiRange = [0x1F600, 0x1f601, 0x1f602, 0x1f603, 0x1f604, 0x1f605]
+    let rendezvousDate = "2022-02-15"
 }
