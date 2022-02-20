@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r5a-kF-xl2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fz1-vc-EvN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -205,7 +205,7 @@
                                     <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MrF-gy-8aB">
                                         <rect key="frame" x="0.0" y="537" width="344" height="101"/>
                                         <subviews>
-                                            <view clipsSubviews="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3Y-rv-lRz" customClass="CustomButton" customModule="PracticalWorkOnCombine" customModuleProvider="target">
+                                            <view clipsSubviews="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3Y-rv-lRz" customClass="CustomButtonForAuth" customModule="PracticalWorkOnCombine" customModuleProvider="target">
                                                 <rect key="frame" x="143" y="21.5" width="58" height="58"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -340,11 +340,118 @@
             </objects>
             <point key="canvasLocation" x="1944.9275362318842" y="49.553571428571423"/>
         </scene>
+        <!--Casino EmojiVC-->
+        <scene sceneID="L1l-9w-zGu">
+            <objects>
+                <viewController id="fz1-vc-EvN" customClass="CasinoEmojiVC" customModule="PracticalWorkOnCombine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SMj-o5-JTD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Казино3" translatesAutoresizingMaskIntoConstraints="NO" id="CaR-v1-45L">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Akh-VE-1xL">
+                                <rect key="frame" x="55" y="94" width="304" height="718"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSF-NV-xbJ" customClass="CustomButtonForEmoji" customModule="PracticalWorkOnCombine" customModuleProvider="target">
+                                        <rect key="frame" x="95" y="379" width="137" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZ1-UZ-45c" customClass="CustomButtonForEmoji" customModule="PracticalWorkOnCombine" customModuleProvider="target">
+                                        <rect key="frame" x="95" y="459" width="137" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tvs-Zi-4sb">
+                                <rect key="frame" x="85" y="134" width="244" height="250"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yTf-5Y-HS9">
+                                        <rect key="frame" x="0.0" y="0.0" width="244" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2YN-Ia-48t"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rWa-Kl-2ci">
+                                        <rect key="frame" x="0.0" y="200" width="244" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PIV-YJ-a4U"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="se6-NZ-zoB">
+                                        <rect key="frame" x="0.0" y="0.0" width="244" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xWB-8B-6zl"/>
+                                        </constraints>
+                                    </view>
+                                    <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qij-j2-sjp">
+                                        <rect key="frame" x="0.0" y="200" width="244" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jye-Ua-n0P"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rWa-Kl-2ci" secondAttribute="trailing" id="61F-5A-pM9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qij-j2-sjp" secondAttribute="trailing" id="Anl-jK-z7U"/>
+                                    <constraint firstItem="Qij-j2-sjp" firstAttribute="leading" secondItem="Tvs-Zi-4sb" secondAttribute="leading" id="PZA-zV-ZM3"/>
+                                    <constraint firstItem="yTf-5Y-HS9" firstAttribute="top" secondItem="Tvs-Zi-4sb" secondAttribute="top" id="Py5-bb-S3V"/>
+                                    <constraint firstItem="yTf-5Y-HS9" firstAttribute="leading" secondItem="Tvs-Zi-4sb" secondAttribute="leading" id="QLU-k8-y4a"/>
+                                    <constraint firstAttribute="trailing" secondItem="yTf-5Y-HS9" secondAttribute="trailing" id="SI2-55-XkZ"/>
+                                    <constraint firstItem="rWa-Kl-2ci" firstAttribute="leading" secondItem="Tvs-Zi-4sb" secondAttribute="leading" id="bvL-0M-oba"/>
+                                    <constraint firstAttribute="height" constant="250" id="fac-ar-Lv3"/>
+                                    <constraint firstAttribute="trailing" secondItem="se6-NZ-zoB" secondAttribute="trailing" id="kBM-wl-iwb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qij-j2-sjp" secondAttribute="bottom" id="mjy-Oy-f8W"/>
+                                    <constraint firstItem="se6-NZ-zoB" firstAttribute="top" secondItem="Tvs-Zi-4sb" secondAttribute="top" id="ned-aY-3NN"/>
+                                    <constraint firstItem="se6-NZ-zoB" firstAttribute="leading" secondItem="Tvs-Zi-4sb" secondAttribute="leading" id="ob8-77-v0w"/>
+                                    <constraint firstAttribute="bottom" secondItem="rWa-Kl-2ci" secondAttribute="bottom" id="sfy-D7-MFb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YVj-B6-wXI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YVj-B6-wXI" firstAttribute="bottom" secondItem="Akh-VE-1xL" secondAttribute="bottom" constant="50" id="19A-8j-Ndf"/>
+                            <constraint firstAttribute="bottom" secondItem="CaR-v1-45L" secondAttribute="bottom" id="6cU-ia-p1a"/>
+                            <constraint firstItem="CaR-v1-45L" firstAttribute="trailing" secondItem="YVj-B6-wXI" secondAttribute="trailing" id="7DG-0F-JBu"/>
+                            <constraint firstItem="CaR-v1-45L" firstAttribute="leading" secondItem="YVj-B6-wXI" secondAttribute="leading" id="9mi-PV-MxV"/>
+                            <constraint firstItem="Akh-VE-1xL" firstAttribute="top" secondItem="YVj-B6-wXI" secondAttribute="top" constant="50" id="FQf-6T-9b0"/>
+                            <constraint firstItem="Tvs-Zi-4sb" firstAttribute="trailing" secondItem="Akh-VE-1xL" secondAttribute="trailing" constant="-30" id="Prz-43-3Fi"/>
+                            <constraint firstItem="Akh-VE-1xL" firstAttribute="leading" secondItem="YVj-B6-wXI" secondAttribute="leading" constant="55" id="Tbq-5o-3iX"/>
+                            <constraint firstItem="Tvs-Zi-4sb" firstAttribute="leading" secondItem="Akh-VE-1xL" secondAttribute="leading" constant="30" id="hfr-Gt-5h6"/>
+                            <constraint firstItem="Akh-VE-1xL" firstAttribute="top" secondItem="Tvs-Zi-4sb" secondAttribute="bottom" constant="-290" id="kVJ-8l-wVl"/>
+                            <constraint firstItem="CaR-v1-45L" firstAttribute="top" secondItem="SMj-o5-JTD" secondAttribute="top" id="wwk-t0-rL6"/>
+                            <constraint firstItem="YVj-B6-wXI" firstAttribute="trailing" secondItem="Akh-VE-1xL" secondAttribute="trailing" constant="55" id="yuz-pP-XEg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottonLineView" destination="rWa-Kl-2ci" id="K3K-sp-7O7"/>
+                        <outlet property="groundviewForEmojiUIView" destination="Tvs-Zi-4sb" id="ARg-Ei-kkP"/>
+                        <outlet property="startButton" destination="XSF-NV-xbJ" id="TkC-G8-NNI"/>
+                        <outlet property="stopButton" destination="DZ1-UZ-45c" id="juH-4e-XqP"/>
+                        <outlet property="topLineView" destination="yTf-5Y-HS9" id="Ws0-yj-sSo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipd-z8-Znv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2792.753623188406" y="49.553571428571423"/>
+        </scene>
     </scenes>
     <resources>
         <image name="mount" width="1125" height="2436"/>
+        <image name="Казино3" width="349" height="667"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

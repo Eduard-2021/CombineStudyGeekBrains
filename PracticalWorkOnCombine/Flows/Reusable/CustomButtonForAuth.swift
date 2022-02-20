@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class CustomButton: UIView {
+class CustomButtonForAuth: UIView {
     
     var shadowColor: UIColor = .black
     var shadowOffset: CGSize = CGSize(width: 2, height: 5)

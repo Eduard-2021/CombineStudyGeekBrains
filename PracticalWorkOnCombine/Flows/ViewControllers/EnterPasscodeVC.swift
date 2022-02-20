@@ -44,7 +44,7 @@ class EnterPasscodeVC: UIViewController {
         let alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",]
         
         for index in 1...12 {
-            let customButton = CustomButton()
+            let customButton = CustomButtonForAuth()
 
             customButton.frame = CGRect(x: offsetX, y: offsetY, width: widthButton, height: heightButton)
             switch index {
