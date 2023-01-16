@@ -24,7 +24,7 @@
 		231E419227B9671A00AE3959 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E419127B9671A00AE3959 /* APIClient.swift */; };
 		231E419427B96DC000AE3959 /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E419327B96DC000AE3959 /* APOD.swift */; };
 		231E419727B9768500AE3959 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 231E419627B9768500AE3959 /* Kingfisher */; };
-		231E784727B44C080009FCAA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E784627B44C080009FCAA /* CustomButton.swift */; };
+		231E784727B44C080009FCAA /* CustomButtonForAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E784627B44C080009FCAA /* CustomButtonForAuth.swift */; };
 		231E784A27B452370009FCAA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 231E784927B452370009FCAA /* SnapKit */; };
 		2321C71627B1AB5800D55C62 /* EnterPasscodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2321C71527B1AB5800D55C62 /* EnterPasscodeVC.swift */; };
 		2326F3F927AED46100CEDC8C /* CustomSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326F3F827AED46100CEDC8C /* CustomSubscriber.swift */; };
@@ -32,6 +32,8 @@
 		2326F3FE27AEF66300CEDC8C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326F3FD27AEF66300CEDC8C /* Constants.swift */; };
 		2326F40227AEF80600CEDC8C /* TableViewCellForPhoneNumberBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2326F40027AEF80600CEDC8C /* TableViewCellForPhoneNumberBase.swift */; };
 		2326F40327AEF80600CEDC8C /* TableViewCellForPhoneNumberBase.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2326F40127AEF80600CEDC8C /* TableViewCellForPhoneNumberBase.xib */; };
+		233093C427BC4458005D6127 /* PracticalTask#5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233093C327BC4458005D6127 /* PracticalTask#5.swift */; };
+		233093C627BC452A005D6127 /* CustomButtonForEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233093C527BC452A005D6127 /* CustomButtonForEmoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,13 +74,15 @@
 		231E418F27B9669700AE3959 /* AsteroidsNearEarth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsNearEarth.swift; sourceTree = "<group>"; };
 		231E419127B9671A00AE3959 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		231E419327B96DC000AE3959 /* APOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APOD.swift; sourceTree = "<group>"; };
-		231E784627B44C080009FCAA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		231E784627B44C080009FCAA /* CustomButtonForAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonForAuth.swift; sourceTree = "<group>"; };
 		2321C71527B1AB5800D55C62 /* EnterPasscodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPasscodeVC.swift; sourceTree = "<group>"; };
 		2326F3F827AED46100CEDC8C /* CustomSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSubscriber.swift; sourceTree = "<group>"; };
 		2326F3FA27AEF54600CEDC8C /* ExtansionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtansionViewController.swift; sourceTree = "<group>"; };
 		2326F3FD27AEF66300CEDC8C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2326F40027AEF80600CEDC8C /* TableViewCellForPhoneNumberBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellForPhoneNumberBase.swift; sourceTree = "<group>"; };
 		2326F40127AEF80600CEDC8C /* TableViewCellForPhoneNumberBase.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellForPhoneNumberBase.xib; sourceTree = "<group>"; };
+		233093C327BC4458005D6127 /* PracticalTask#5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PracticalTask#5.swift"; sourceTree = "<group>"; };
+		233093C527BC452A005D6127 /* CustomButtonForEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonForEmoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,7 @@
 				230A35E827B9A5F30029124E /* PracticalTask#2.swift */,
 				230A35EA27B9A5FF0029124E /* PracticalTask#3.swift */,
 				231E418D27B94F4100AE3959 /* PracticalTask#4.swift */,
+				233093C327BC4458005D6127 /* PracticalTask#5.swift */,
 			);
 			path = PracticalTasks;
 			sourceTree = "<group>";
@@ -216,7 +221,8 @@
 			children = (
 				2326F40027AEF80600CEDC8C /* TableViewCellForPhoneNumberBase.swift */,
 				2326F40127AEF80600CEDC8C /* TableViewCellForPhoneNumberBase.xib */,
-				231E784627B44C080009FCAA /* CustomButton.swift */,
+				231E784627B44C080009FCAA /* CustomButtonForAuth.swift */,
+				233093C527BC452A005D6127 /* CustomButtonForEmoji.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -363,12 +369,14 @@
 			files = (
 				2326F3F927AED46100CEDC8C /* CustomSubscriber.swift in Sources */,
 				2321C71627B1AB5800D55C62 /* EnterPasscodeVC.swift in Sources */,
-				231E784727B44C080009FCAA /* CustomButton.swift in Sources */,
+				231E784727B44C080009FCAA /* CustomButtonForAuth.swift in Sources */,
 				23140B1627AB14B700533F64 /* ViewController.swift in Sources */,
 				23140B1227AB14B700533F64 /* AppDelegate.swift in Sources */,
+				233093C627BC452A005D6127 /* CustomButtonForEmoji.swift in Sources */,
 				231E418E27B94F4100AE3959 /* PracticalTask#4.swift in Sources */,
 				230A35E927B9A5F30029124E /* PracticalTask#2.swift in Sources */,
 				230A35E727B9A5EB0029124E /* PracticalTask#1.swift in Sources */,
+				233093C427BC4458005D6127 /* PracticalTask#5.swift in Sources */,
 				23140B1427AB14B700533F64 /* SceneDelegate.swift in Sources */,
 				2326F3FE27AEF66300CEDC8C /* Constants.swift in Sources */,
 				231E419027B9669700AE3959 /* AsteroidsNearEarth.swift in Sources */,
@@ -555,6 +563,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PracticalWorkOnCombine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -583,6 +592,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PracticalWorkOnCombine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
