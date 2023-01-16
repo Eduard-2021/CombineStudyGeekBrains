@@ -16,9 +16,149 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLj-r9-bOg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите текст для передачи с помощью Combine в другой Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oms-ur-ccc">
+                                        <rect key="frame" x="20" y="59" width="374" height="45"/>
+                                        <color key="backgroundColor" white="0.94850947378444028" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="caq-MI-amO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" systemColor="tintColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DUR-JS-mhb">
+                                        <rect key="frame" x="20" y="112" width="374" height="34"/>
+                                        <color key="backgroundColor" white="0.94850947379999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qze-mD-bDn">
+                                        <rect key="frame" x="45" y="154" width="324" height="31"/>
+                                        <color key="backgroundColor" red="0.96848052740097046" green="0.91512969308604875" blue="0.70486781168293788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="bjx-wF-624"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Передать текст в другой Label"/>
+                                        <connections>
+                                            <action selector="transferButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2m-Mb-RUh"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TransmittedText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KS-mJ-hGG">
+                                        <rect key="frame" x="20" y="193" width="374" height="36"/>
+                                        <color key="backgroundColor" white="0.94850947379999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="mR1-TO-FMh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="75i-kN-qcQ">
+                                        <rect key="frame" x="20" y="292" width="208" height="211"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="211" id="9Y3-qf-Was"/>
+                                            <constraint firstAttribute="width" constant="208" id="pa5-iA-ebk"/>
+                                        </constraints>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Введите номер телефона для поиска:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9X-3C-Ns6">
+                                        <rect key="frame" x="236" y="281" width="158" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текущая телефонная база" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TC-Na-SPT">
+                                        <rect key="frame" x="20" y="263" width="208" height="16"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="208" id="F97-vD-mk7"/>
+                                            <constraint firstAttribute="height" constant="16" id="tzW-Zi-Udf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Результат поиска:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jd-0y-Qga">
+                                        <rect key="frame" x="254" y="431" width="123" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVm-XR-9Z8">
+                                        <rect key="frame" x="236" y="456" width="158" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.94850947379999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ee6-yi-CaT">
+                                        <rect key="frame" x="236" y="382" width="158" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.96848052740000001" green="0.91512969310000003" blue="0.70486781170000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Начать поиск"/>
+                                        <connections>
+                                            <action selector="startSearchingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TrE-A1-Htd"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1B-le-9U5">
+                                        <rect key="frame" x="236" y="336" width="158" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.94850947379999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DUR-JS-mhb" firstAttribute="leading" secondItem="JLj-r9-bOg" secondAttribute="leading" constant="20" id="49q-bQ-XUZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="oms-ur-ccc" secondAttribute="trailing" constant="20" id="ADw-1G-gT9"/>
+                                    <constraint firstItem="DUR-JS-mhb" firstAttribute="top" secondItem="oms-ur-ccc" secondAttribute="bottom" constant="8" symbolic="YES" id="AYI-fy-6Yp"/>
+                                    <constraint firstAttribute="trailing" secondItem="1KS-mJ-hGG" secondAttribute="trailing" constant="20" symbolic="YES" id="ITc-79-R5n"/>
+                                    <constraint firstItem="5TC-Na-SPT" firstAttribute="top" secondItem="1KS-mJ-hGG" secondAttribute="bottom" constant="34" id="LzA-ha-V7o"/>
+                                    <constraint firstItem="1KS-mJ-hGG" firstAttribute="leading" secondItem="JLj-r9-bOg" secondAttribute="leading" constant="20" symbolic="YES" id="N8S-u5-x2E"/>
+                                    <constraint firstItem="1KS-mJ-hGG" firstAttribute="top" secondItem="Qze-mD-bDn" secondAttribute="bottom" constant="8" symbolic="YES" id="O6k-Te-VPj"/>
+                                    <constraint firstItem="75i-kN-qcQ" firstAttribute="leading" secondItem="JLj-r9-bOg" secondAttribute="leading" constant="20" symbolic="YES" id="Ow3-Fl-Q0a"/>
+                                    <constraint firstItem="oms-ur-ccc" firstAttribute="leading" secondItem="JLj-r9-bOg" secondAttribute="leading" constant="20" id="StP-LH-UyH"/>
+                                    <constraint firstItem="Qze-mD-bDn" firstAttribute="leading" secondItem="JLj-r9-bOg" secondAttribute="leading" constant="45" id="akX-Qv-dnZ"/>
+                                    <constraint firstItem="5TC-Na-SPT" firstAttribute="leading" secondItem="JLj-r9-bOg" secondAttribute="leading" constant="20" symbolic="YES" id="eko-mz-CK9"/>
+                                    <constraint firstItem="oms-ur-ccc" firstAttribute="top" secondItem="JLj-r9-bOg" secondAttribute="top" constant="59" id="fac-dG-Oje"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qze-mD-bDn" secondAttribute="trailing" constant="45" id="nWX-Eh-6Di"/>
+                                    <constraint firstItem="75i-kN-qcQ" firstAttribute="top" secondItem="5TC-Na-SPT" secondAttribute="bottom" constant="13" id="oyP-f5-fU0"/>
+                                    <constraint firstAttribute="trailing" secondItem="DUR-JS-mhb" secondAttribute="trailing" constant="20" id="yT7-4h-ile"/>
+                                    <constraint firstItem="Qze-mD-bDn" firstAttribute="top" secondItem="DUR-JS-mhb" secondAttribute="bottom" constant="8" symbolic="YES" id="zpO-vD-CSx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JLj-r9-bOg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8rm-IT-0G8"/>
+                            <constraint firstAttribute="bottom" secondItem="JLj-r9-bOg" secondAttribute="bottom" id="DfL-Op-mA0"/>
+                            <constraint firstItem="JLj-r9-bOg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Y9Q-Dw-1b1"/>
+                            <constraint firstItem="JLj-r9-bOg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iaX-Lg-gJT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="phoneNumberForSearchTextField" destination="E1B-le-9U5" id="7fl-DE-Wb1"/>
+                        <outlet property="searchResultsLabel" destination="fVm-XR-9Z8" id="5jK-eF-6a6"/>
+                        <outlet property="tableView" destination="75i-kN-qcQ" id="cji-eD-KSN"/>
+                        <outlet property="titleResultSearchLabel" destination="1jd-0y-Qga" id="IWd-6f-h3I"/>
+                        <outlet property="transmittedTextLabel" destination="1KS-mJ-hGG" id="x5R-9z-eaa"/>
+                        <outlet property="transmittedTextUITextField" destination="DUR-JS-mhb" id="hpE-Tm-oEw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -28,6 +168,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
